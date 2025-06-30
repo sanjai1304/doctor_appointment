@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Appointment Form</title>
+    <style>
+ <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:blue
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            background-color: #004080; 
+            padding: 20px 0;
+            margin: 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px solid #004080;
+            width: 60%;
+            margin: 10px auto 20px;
+        }
+
+        form {
+            background-color: #ffffff;
+            width: 60%;
+            margin: 0 auto 50px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f7fc; 
+        }
+
+        td {
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        label {
+            font-weight: bold;
+            color: #003366;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0066cc;
+        }
+
+        .submit-row {
+            text-align: center;
+            padding-top: 20px;
+            background-color: #e6f0fa;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Doctor Appointment Form</h1>
+<hr>
+
+<form action="redirect.html" method="GET">
+    <table>
+        <tr>
+            <td><label for="fullname">Full Name:</label></td>
+            <td><input type="text" id="fullname" name="fullname" required></td>
+        </tr>
+        <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+                <select id="gender" name="gender" required>
+                    <option value="">-- Select --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="branch">Branch:</label></td>
+            <td>
+                <select id="branch" name="branch" required>
+                    <option value="">-- Choose a branch --</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="coimbatore">Coimbatore</option>
+                    <option value="madurai">Madurai</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="doctor">Doctor:</label></td>
+            <td>
+                <select id="doctor" name="doctor" required>
+                    <option value="">-- Choose a doctor --</option>
+                    <option value="dr_pavan">Dr. Pavan</option>
+                    <option value="dr_akash">Dr. Akash</option>
+                    <option value="dr_sanjai">Dr. Sanjai</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td><input type="tel" id="phone" name="phone" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="appointment_date">Appointment Date:</label></td>
+            <td><input type="date" id="appointment_date" name="appointment_date" required></td>
+        </tr>
+        <tr>
+            <td><label for="reason">Reason for Visit:</label></td>
+            <td><textarea id="reason" name="reason" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr class="submit-row">
+            <td colspan="2">
+                <button type="submit">Book Appointment</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</head>
+</html>
+
+</body>
+</html>
