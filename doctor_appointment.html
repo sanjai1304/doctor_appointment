@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Doctor Appointment</title>
     <style>
- <style>
-        body {
+        <style>
+         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color:blue
             margin: 0;
@@ -20,22 +20,16 @@
             margin: 0;
         }
 
-        hr {
-            border: none;
-            border-top: 3px solid #004080;
-            width: 60%;
-            margin: 10px auto 20px;
-        }
-
+        
+        
         form {
             background-color: #ffffff;
-            width: 60%;
-            margin: 0 auto 50px;
-            padding: 30px;
+            width: 50%;
+            margin: 0 auto 20px;
+            padding: 10px;
             border-radius: 12px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
@@ -54,25 +48,14 @@
             font-weight: bold;
             color: #003366;
         }
-
         input[type="text"],
         input[type="date"],
         input[type="tel"],
         input[type="email"],
         select,
         textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
-            background-color: #f9f9f9;
+             resize: vertical;
         }
-
-        textarea {
-            resize: vertical;
-        }
-
         button {
             background-color: #004080;
             color: white;
@@ -81,8 +64,9 @@
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            
         }
+          
 
         button:hover {
             background-color: #0066cc;
@@ -93,8 +77,30 @@
             padding-top: 20px;
             background-color: #e6f0fa;
         }
+         @media (max-width: 768px) {
+            form {
+                width: 90%;
+                padding: 15px;
+            }
+
+            td {
+                display: block;
+                width: 100%;
+                padding: 8px 0;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .submit-row {
+                padding-top: 10px;
+            }
+        }
+
     </style>
-</head>
+    
 <body>
 
 <h1>Doctor Appointment Form</h1>
@@ -166,9 +172,12 @@
         </tr>
     </table>
 </form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 </body>
 </head>
 </html>
 
 </body>
 </html>
+
